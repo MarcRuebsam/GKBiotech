@@ -6,3 +6,5 @@
 *.toc
 *.gz
 *.log
+
+.ipynb_check*
