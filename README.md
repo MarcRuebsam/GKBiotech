@@ -1,0 +1,1 @@
+This is a small repo for the protocoll of our biotechnology course
