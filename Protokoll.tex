@@ -1,0 +1,126 @@
+% Papierformat
+%\documentclass[a4paper, 12pt]{article}
+\documentclass[
+%draft,        
+final,
+twoside,
+paper=a4, paper=portrait, pagesize=auto, 
+fontsize=12pt,  
+]{scrartcl} 
+
+\usepackage{mathptmx} %times new roman
+
+\usepackage{url} 
+
+\usepackage{moreverb}
+
+% wegen deutschen Umlauten
+\usepackage[utf8]{inputenc}
+
+% wegen links
+\usepackage{hyperref}
+
+% fuer Bilder
+\usepackage{graphicx}
+
+\usepackage{geometry}
+\geometry{a4paper, top=25mm, left=25mm, right=25mm, bottom=25mm, headsep=10mm, footskip=12mm}
+
+\bibliographystyle{ipmb_new}
+
+% 1.5 Zeilenabstand
+\usepackage{setspace}
+\linespread{1.5}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % New command to make the lines in the title page
+
+\usepackage{booktabs}%für toprule und so in Tabellen
+
+%für sections nur auf ungeraden seitenzahlen beginnen
+%\let\oldsection\section
+%\def\section{\cleardoublepage\oldsection}
+
+\frenchspacing %keine doppelten Leerzeichen für neuen Satz
+\setlength\parindent{0pt} %kein Einrücken in neuem Absatz
+
+
+
+\begin{document}
+	%-----------------------------------------
+	%   Titelseite
+	%-----------------------------------------
+	\thispagestyle{empty}
+	\begin{center}
+		%\vspace*{-2cm}
+		\textsc{\LARGE Ruprecht-Karls-Universität Heidelberg}\\
+		\textsc{\large Faculty of Biosciences}\\[1cm]
+		\textsc{\LARGE Master of Science\\[0.3cm]
+			Molecular Biotechnology}\\[2.5cm]
+		\HRule \\[0.4cm]
+		\Huge
+		\textbf{Grundpraktikum Biotech}\\ % detecting virus strains from ms/ms datasets
+		\large
+		\textbf{WS 2015/16} \\[0.4cm]
+		\HRule
+		\\[2cm]
+		{\LARGE Pflichtpraktikum}\\
+		\large
+		Institut für Pharmazie und Molekulare Biotechnologie\\
+		23 Oktober 2015 - 11 Dezember 2015\\[1,5cm]
+		
+		Betreuer: \textsc{Calcagno, Graf, Gross, Herbel}\\[2cm]
+		
+		Heidelberg\\
+		11 Dezember 2015\\
+	\end{center}
+	\pagebreak
+	
+	%-------------------------------------------------------------------------------
+	% Erklärung der Selbstanfertigung
+	%-------------------------------------------------------------------------------
+	\newpage
+	\thispagestyle{empty}
+	\quad
+	\newpage
+	\thispagestyle{empty}
+	\begin{center}
+		\huge\textbf{Erklärung}\\
+	\end{center}
+	\vspace{1cm}
+	Das vorliegende Protokoll wurde auf Grundlage des Grundpraktikums Molekulare Biotechnologie im Wintersemester 2015/16 angefertigt.\\
+
+	% % % % % % % % % % % % % % % % % % % %
+	\begin{minipage}{\linewidth}
+		\vspace*{2cm}
+		Wir erklären hiermit ehrenwörtlich, dass: \\
+		\begin{enumerate}
+			\item wir das vorliegende Protokoll selbstständig unter Anleitung verfasst und keine anderen als die angegebenen Quellen und Hilfsmittel benutzt haben;
+			\item die Übernahme wörtlicher Zitate aus der Literatur/Internet sowie die Verwendung der Gedanken anderer Autoren an den entsprechenden Stellen innerhalb der Arbeit gekennzeichnet wurde; 
+			\item wir unser Protokoll keiner anderen Prüfung vorgelegt haben. \\
+		\end{enumerate}
+		Wir sind uns bewusst, dass eine falsche Erklärung rechtliche Folgen haben wird.
+	\end{minipage}
+	\begin{minipage}{\linewidth}\vspace*{1cm}
+		\begin{tabular}{p{20em}p{50em}}
+			Heidelberg, Dezember 2015 & \\
+			\\
+			\\
+			\\
+		\end{tabular}
+	\end{minipage}
+	\clearpage
+	
+	%----------------------------------------------
+	% Begin der Eigentlichen Arbeit
+	%----------------------------------------------
+	\newpage
+	\thispagestyle{empty}
+	\tableofcontents
+	
+    \newpage
+	
+	\renewcommand\refname{References}
+	\addcontentsline{toc}{section}{References}
+	\bibliography{literatur}{}
+	
+\end{document}
